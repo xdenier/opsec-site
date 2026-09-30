@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>opsec.eu.cc | Team OpSec, Smart India Hackathon 2026 (under construction)</title>
+<meta name="description" content="Project site of Team OpSec (team ID 150966), Smart India Hackathon 2026, problem statement 26145. Under construction.">
+<!-- Placeholder: remove the next line if you want search engines to index this page -->
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e1726'/%3E%3Crect x='6' y='13' width='20' height='6' fill='%23e6e8eb'/%3E%3C/svg%3E">
+<style>
+:root {
+  --paper: #e6e8eb;
+  --sheet: #f4f5f6;
+  --ink: #0e1726;
+  --muted: #55606f;
+  --stamp: #b3261e;
+  --mono: "Courier Prime", "Courier New", Courier, monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; overflow: hidden; color-scheme: light; }
+body {
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: clamp(.85rem, 1.9vh, 1.0625rem)/1.55 var(--mono);
+}
+.sheet {
+  position: relative;
+  width: 100%;
+  max-width: 38rem;
+  padding: clamp(1.25rem, 5vh, 3rem) clamp(1.25rem, 5vw, 3rem);
+  background: var(--sheet);
+  border: 1px solid #c9cdd3;
+  box-shadow: 0 18px 40px -24px rgba(14, 23, 38, .45);
+}
+h1 {
+  margin: 0 0 .4rem;
+  font-size: clamp(1.7rem, 6vh, 2.9rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  overflow-wrap: anywhere;
+}
+.tag { margin: 0 0 1.25rem; color: var(--muted); }
+dl { margin: 0 0 1.25rem; display: grid; grid-template-columns: max-content 1fr; gap: .1rem 1rem; }
+dt { color: var(--muted); }
+dd { margin: 0; }
+p { margin: 0 0 .9rem; }
+.hint { margin: 0; color: var(--muted); font-size: .85em; }
+
+/* redaction bar: wipes on once at load, reveals on hover, focus or tap */
+.r {
+  color: transparent;
+  background: linear-gradient(var(--ink), var(--ink)) no-repeat 0 0 / 100% 100%;
+  padding: 0 .15em;
+  cursor: help;
+  transition: background-size .2s, color .2s;
+  animation: wipe .8s .5s cubic-bezier(.6, 0, .2, 1) backwards;
+}
+.r:hover, .r:focus { color: var(--ink); background-size: 0 100%; outline: none; }
+.r:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; }
+@keyframes wipe { from { background-size: 0 100%; } }
+
+.stamp {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: .15rem .6rem;
+  border: 3px solid var(--stamp);
+  border-radius: 3px;
+  color: var(--stamp);
+  font-weight: 700;
+  transform: rotate(6deg);
+  opacity: .88;
+  animation: thud .35s 1.3s cubic-bezier(.3, 1.6, .5, 1) backwards;
+}
+@keyframes thud { from { transform: rotate(6deg) scale(1.9); opacity: 0; } }
+
+@media (max-width: 34rem) {
+  .stamp { position: static; display: inline-block; margin-bottom: .75rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .r, .stamp { animation: none; transition: none; }
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+  <div class="stamp" aria-hidden="true">Under construction</div>
+  <h1>opsec.eu.cc</h1>
+  <p class="tag">Sees threats. Sends nothing.</p>
+
+  <dl>
+    <dt>Status:</dt><dd>Under construction, launching soon</dd>
+    <dt>Project:</dt><dd>OpSec, AI-Powered Passive Threat Detection</dd>
+    <dt>Event:</dt><dd>Smart India Hackathon 2026, PS 26145</dd>
+    <dt>Team:</dt><dd>OpSec, team ID 150966</dd>
+    <dt>Contents:</dt><dd><span class="r" tabindex="0">The prototype dashboard</span></dd>
+  </dl>
+
+  <p>Judges: this address belongs to Team OpSec, the students behind this entry. The prototype is still being deployed. The demo video and report are in our submission slides.</p>
+
+  <p class="hint">Hover over, or tap, the black bar.</p>
+</main>
+</body>
+</html>
